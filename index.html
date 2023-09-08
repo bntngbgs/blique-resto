@@ -17,23 +17,36 @@
     <!-- HEADER START -->
     <header>
       <div
-        class="container px-3 py-4 mx-auto flex justify-between sm:px-0 md:py-7"
+        class="container px-3 py-4 mx-auto flex justify-between items-center relative sm:px-0 sm:gap-5 md:py-7"
       >
-        <div>
-          <h1 class="text-xl sm:text-2xl lg:text-4xl">BLIQUE RESTO</h1>
+        <div class="flex gap-2 items-center">
+          <h1 class="text-2xl font-bold lg:text-4xl">BLIQUE</h1>
+          <img src="img/logo.svg" alt="" class="w-[48px] lg:w-[64px]" />
+
+          <h1 class="text-[#C38154] text-2xl font-bold lg:text-4xl">RESTO</h1>
         </div>
-        <button id="menu-button" class="self-end">
+        <nav
+          class="navbar absolute w-full bg-[#C38154] text-white left-0 top-[80px] hidden px-3 pt-3 pb-7 sm:pb-0 sm:pt-0 sm:flex sm:w-full sm:static sm:px-1 sm:bg-transparent sm:text-black sm:flex-grow sm:items-center"
+        >
+          <ul
+            class="flex flex-col justify-center items-center sm:text-sm sm:flex-row sm:gap-6 sm:justify-end sm:w-full md:gap-10 md:text-base lg:text-lg"
+          >
+            <li class="py-3 tracking-wider sm:py-0"><a href="">HOME</a></li>
+            <li class="py-3 tracking-wider sm:py-0"><a href="">MENU</a></li>
+            <li class="py-3 tracking-wider sm:py-0">
+              <a href="#">SERVICES</a>
+            </li>
+            <li
+              class="py-2 mt-2 px-5 bg-slate-50 text-[#C38154] rounded-full sm:py-1 sm:mt-0 sm:border-solid sm:border-2 sm:border-[#C38154]"
+            >
+              <a href="#">Reservation</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="menu-button" class="sm:hidden">
           <img src="img/icon-menu.svg" alt="" class="w-8" />
         </button>
       </div>
-      <nav class="navbar hidden px-3">
-        <ul class="flex flex-col top-0 justify-center items-center">
-          <li class="py-2"><a href="">HOME</a></li>
-          <li class="py-2"><a href="">MENU</a></li>
-          <li class="py-2"><a href="#">SERVICES</a></li>
-          <li class="py-2"><a href="">Reservation</a></li>
-        </ul>
-      </nav>
     </header>
     <!-- HEADER END -->
 
