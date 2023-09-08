@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Tailwind CLI</title>
+  </head>
+  <body class="font-notoSerif">
+    <!-- HEADER START -->
+    <header>
+      <div
+        class="container px-3 py-4 mx-auto flex justify-between sm:px-0 md:py-7"
+      >
+        <div>
+          <h1 class="text-xl sm:text-2xl lg:text-4xl">BLIQUE RESTO</h1>
+        </div>
+        <button id="menu-button" class="self-end">
+          <img src="img/icon-menu.svg" alt="" class="w-8" />
+        </button>
+      </div>
+      <nav class="navbar hidden px-3">
+        <ul class="flex flex-col top-0 justify-center items-center">
+          <li class="py-2"><a href="">HOME</a></li>
+          <li class="py-2"><a href="">MENU</a></li>
+          <li class="py-2"><a href="#">SERVICES</a></li>
+          <li class="py-2"><a href="">Reservation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+      <!-- HERO START -->
+      <div class="container mx-auto text-white">
+        <div
+          class="bg-[url('img/hero.jpg')] px-3 py-4 bg-cover bg-center h-96 lg:h-[540px] flex flex-col items-center justify-center"
+        >
+          <h1
+            class="text-3xl mb-4 font-bold sm:text-center md:mb-8 lg:text-5xl lg:w-1/2"
+          >
+            Fine Dining Doesn't have to be expensive!
+          </h1>
+          <p class="mb-4 sm:text-center sm:w-2/3 lg:w-1/2 lg:text-lg md:mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, nemo, facilis quasi beatae atque neque optio
+            consectetur veritatis id temporibus quibusdam asperiores tempore?
+          </p>
+          <a
+            href="#"
+            class="bg-[#C38154] inline-block py-2 px-5 rounded-3xl self-start sm:self-center lg:text-lg md:py-3 md:px-6 md:rounded-full"
+            >Make a Reservation</a
+          >
+        </div>
+      </div>
+      <!-- HERO END -->
+
+      <!-- MENU START -->
+      <div class="container mx-auto mt-8 px-3 sm:px-0 sm:mt-16">
+        <h1 class="text-2xl text-center mb-9 md:text-4xl">Our Special Menu:</h1>
+        <div>
+          <div class="flex flex-wrap justify-center items-center gap-8">
+            <div
+              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-52 object-cover md:h-60"
+                  src="img/biryani.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
+                  >
+                    Biryani
+                  </h5>
+                </a>
+                <p
+                  class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400 md:text-base"
+                >
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+              </div>
+            </div>
+            <div
+              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-52 object-cover md:h-60"
+                  src="img/biryani.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
+                  >
+                    Biryani
+                  </h5>
+                </a>
+                <p
+                  class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400 md:text-base"
+                >
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+              </div>
+            </div>
+            <div
+              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-52 object-cover md:h-60"
+                  src="img/biryani.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
+                  >
+                    Biryani
+                  </h5>
+                </a>
+                <p
+                  class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400 md:text-base"
+                >
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+              </div>
+            </div>
+            <div
+              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-52 object-cover md:h-60"
+                  src="img/biryani.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
+                  >
+                    Biryani
+                  </h5>
+                </a>
+                <p
+                  class="text-sm mb-3 font-normal text-gray-700 dark:text-gray-400 md:text-base"
+                >
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+              </div>
+            </div>
+
+            <!--  <div class="card-menu border-2 border-red-400 max-w-[360px] flex-1">
+              <img
+                src="img/biryani.jpg"
+                alt="biryani"
+                class="w-full h-36 object-cover md:h-48"
+              />
+              <h3 class="text-xl font-bold">Biryani</h3>
+              <p class="w-44 text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                odit?
+              </p>
+            </div>
+            <div class="card-menu border-2 border-red-400 max-w-[360px] flex-1">
+              <img
+                src="img/biryani.jpg"
+                alt="biryani"
+                class="w-full h-36 object-cover md:h-48"
+              />
+              <h3 class="text-xl font-bold">Biryani</h3>
+              <p class="w-44 text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                odit?
+              </p>
+            </div>
+            <div class="card-menu border-2 border-red-400 max-w-[360px] flex-1">
+              <img
+                src="img/biryani.jpg"
+                alt="biryani"
+                class="w-full h-36 object-cover md:h-48"
+              />
+              <h3 class="text-xl font-bold">Biryani</h3>
+              <p class="w-44 text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                odit?
+              </p>
+            </div>
+            <div class="card-menu border-2 border-red-400 max-w-[360px] flex-1">
+              <img
+                src="img/biryani.jpg"
+                alt="biryani"
+                class="w-full h-36 md:h-48 object-cover"
+              />
+              <h3 class="text-xl font-bold">Biryani</h3>
+              <p class="w-44 text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                odit?
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- MENU END -->
+
+      <!-- SERVICE START -->
+      <div
+        class="container mx-auto mt-20 px-3 py-14 bg-[#C38154] lg:flex lg:justify-center lg:items-center"
+      >
+        <div class="mb-5 w-full flex flex-col items-center lg:w-1/2">
+          <h1 class="text-2xl text-center mb-3 text-white pt-5 md:text-4xl">
+            Our Service of Excellence :
+          </h1>
+          <p class="px-3 text-slate-50 max-w-[60ch] text-center lg:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            recusandae quasi cupiditate enim explicabo necessitatibus id
+            officiis nam, aliquid ad?
+          </p>
+        </div>
+        <div
+          class="w-full flex flex-wrap justify-evenly gap-y-5 gap-x-3 lg:gap-y-7 lg:justify-center lg:gap-x-7 lg:w-1/2"
+        >
+          <div
+            class="w-[160px] flex flex-col justify-center items-center bg-slate-200 p-3 rounded-xl lg:w-[240px] lg:gap-4"
+          >
+            <img src="img/icon-chef.svg" alt="" class="w-28 lg:w-32" />
+            <h2 class="text-md font-bold text-center lg:text-lg">
+              Verified Master Chef
+            </h2>
+          </div>
+          <div
+            class="w-[160px] flex flex-col justify-center items-center bg-slate-200 gap-5 p-3 rounded-xl lg:w-[240px] lg:gap-4"
+          >
+            <img src="img/icon-time.svg" alt="" class="w-28 lg:w-32" />
+            <h2 class="text-md font-bold lg:text-lg">Fast Serving</h2>
+          </div>
+          <div
+            class="w-[160px] flex flex-col justify-center items-center bg-slate-200 p-3 rounded-xl lg:w-[240px] lg:gap-4"
+          >
+            <img src="img/icon-piggybank.svg" alt="" class="w-32 lg:w-32" />
+            <h2 class="text-md font-bold lg:text-lg">Save Money</h2>
+          </div>
+          <div
+            class="w-[160px] flex flex-col justify-center items-center bg-slate-200 p-3 rounded-xl lg:w-[240px] lg:gap-4"
+          >
+            <img src="img/icon-plate.svg" alt="" class="w-32 lg:w-32" />
+            <h2 class="text-md font-bold text-center lg:text-lg">
+              Taste the Delicious
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE END -->
+    </main>
+  </body>
+</html>
