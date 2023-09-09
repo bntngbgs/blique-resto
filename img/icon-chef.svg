@@ -1,20 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M89.5817 120C58.6934 91.5024 74.0344 44.757 110.302 41.133C127.029 39.4629 149.113 54.0714 159.999 54.0714C194.568 54.0714 228.221 27.2561 260.493 54.0714C279.192 69.6052 269.699 99.5044 257.006 107.036" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M90 117C142.667 111.566 197.696 95.755 250 112.449" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M93.0559 139C92.8995 145.073 93.028 151.088 94 157" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M97 155.173C145.65 132.936 205.18 134.027 254 156" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M253 131C253.464 138.692 254 146.28 254 154" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M93.7931 186.199C85.6744 187.218 87.5015 211.695 103.941 211.695C103.941 305 263.001 295 247.277 202.221C256 202.221 265.677 181.04 253.5 179" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M160 206C160.457 203.005 160.774 199.981 161 197" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M196 206C196 203.545 196 200.005 196 197" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M186 245C179.911 247.785 172.5 249.957 168 245.225" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M38 360C47.0818 317.424 79.2813 287.286 125.151 287.286C125.88 287.286 154.503 315.535 180.414 313.586C203.33 311.863 216.097 294.682 235.003 287.286C263.137 276.278 307 338.995 307 358.456" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M350 159C338.607 183.953 286.988 272.605 292.396 306" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M353.983 156C361.109 192.062 371.983 282.642 333 308" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M328 304C318.437 300.114 309.042 295.03 299 293" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M294.975 308C285.934 328.2 276.314 343.303 299 320.79" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M311 320C308.736 331.403 297.744 346.679 290 331.889" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M211 336.863C210.815 349.971 203 348.348 203 336" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M146 351.449C135.34 353.573 138.871 349.231 143.412 344" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{fill:none;stroke:#C98C64;stroke-width:32;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:0.9;}
+</style>
+<path class="st0" d="M179.2,240c-61.8-57-31.1-150.5,41.4-157.7c33.5-3.3,77.6,25.9,99.4,25.9c69.1,0,136.4-53.6,201,0
+	c37.4,31.1,18.4,90.9-7,105.9"/>
+<path class="st0" d="M180,234c105.3-10.9,215.4-42.5,320-9.1"/>
+<path class="st0" d="M186.1,278c-0.3,12.1-0.1,24.2,1.9,36"/>
+<path class="st0" d="M194,310.3c97.3-44.5,216.4-42.3,314,1.7"/>
+<path class="st0" d="M506,262c0.9,15.4,2,30.6,2,46"/>
+<path class="st0" d="M187.6,372.4c-16.2,2-12.6,51,20.3,51C207.9,610,526,590,494.6,404.4c17.4,0,36.8-42.4,12.4-46.4"/>
+<path class="st0" d="M320,412c0.9-6,1.5-12,2-18"/>
+<path class="st0" d="M392,412c0-4.9,0-12,0-18"/>
+<path class="st0" d="M372,490c-12.2,5.6-27,9.9-36,0.5"/>
+<path class="st0" d="M76,720c18.2-85.2,82.6-145.4,174.3-145.4c1.5,0,58.7,56.5,110.5,52.6c45.8-3.4,71.4-37.8,109.2-52.6
+	c56.3-22,144,103.4,144,142.3"/>
+<path class="st0" d="M700,318c-22.8,49.9-126,227.2-115.2,294"/>
+<path class="st0" d="M708,312c14.3,72.1,36,253.3-42,304"/>
+<path class="st0" d="M656,608c-19.1-7.8-37.9-17.9-58-22"/>
+<path class="st0" d="M590,616c-18.1,40.4-37.3,70.6,8,25.6"/>
+<path class="st0" d="M622,640c-4.5,22.8-26.5,53.4-42,23.8"/>
+<path class="st0" d="M422,673.7c-0.4,26.2-16,23-16-1.7"/>
+<path class="st0" d="M292,702.9c-21.3,4.2-14.3-4.4-5.2-14.9"/>
 </svg>
