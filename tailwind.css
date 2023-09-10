@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.intl-tel-input,
+.iti {
+  width: 100%;
+}

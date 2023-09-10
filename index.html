@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
+      defer
+    ></script>
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +15,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
     <title>Tailwind CLI</title>
   </head>
   <body class="font-notoSerif">
@@ -54,7 +62,7 @@
       <!-- HERO START -->
       <div class="container mx-auto text-white">
         <div
-          class="bg-[url('img/hero.jpg')] bg-slate-400 bg-blend-multiply px-3 py-4 bg-cover bg-center h-96 lg:h-[540px] flex flex-col items-center justify-center"
+          class="bg-[url('img/hero.jpg')] bg-slate-400 bg-blend-multiply px-4 py-4 bg-cover bg-center h-96 lg:h-[540px] flex flex-col items-center justify-center"
         >
           <h1
             class="text-3xl mb-4 font-bold sm:text-center md:mb-8 lg:text-5xl lg:w-2/3"
@@ -82,18 +90,18 @@
           Our Special Menu :
         </h1>
         <div>
-          <div class="flex flex-wrap justify-center items-center gap-8">
+          <div
+            class="flex flex-wrap justify-center items-center gap-8 px-4 sm:px-0"
+          >
             <div
-              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+              class="max-w-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
             >
-              <a href="#">
-                <img
-                  class="rounded-t-lg w-full h-52 object-cover md:h-60"
-                  src="img/ribeye-steak.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
+              <img
+                class="rounded-t-lg w-full h-52 object-cover md:h-60"
+                src="img/ribeye-steak.jpg"
+                alt=""
+              />
+              <div class="p-3 sm:p-5">
                 <a href="#">
                   <h5
                     class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
@@ -110,7 +118,7 @@
               </div>
             </div>
             <div
-              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+              class="max-w-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
             >
               <a href="#">
                 <img
@@ -119,7 +127,7 @@
                   alt=""
                 />
               </a>
-              <div class="p-5">
+              <div class="p-3 sm:p-5">
                 <a href="#">
                   <h5
                     class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
@@ -136,7 +144,7 @@
               </div>
             </div>
             <div
-              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+              class="max-w-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
             >
               <a href="#">
                 <img
@@ -145,7 +153,7 @@
                   alt=""
                 />
               </a>
-              <div class="p-5">
+              <div class="p-3 sm:p-5">
                 <a href="#">
                   <h5
                     class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
@@ -162,7 +170,7 @@
               </div>
             </div>
             <div
-              class="max-w-[420px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
+              class="max-w-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-auto sm:max-w-[280px] md:max-w-[360px]"
             >
               <a href="#">
                 <img
@@ -171,7 +179,7 @@
                   alt=""
                 />
               </a>
-              <div class="p-5">
+              <div class="p-3 sm:p-5">
                 <a href="#">
                   <h5
                     class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl"
@@ -194,7 +202,7 @@
 
       <!-- SERVICE START -->
       <div
-        class="container mx-auto mt-16 px-3 py-8 bg-[#C98C64] md:mt-20 md:py-14 md:px-5 lg:flex lg:justify-center lg:items-center"
+        class="container mx-auto mt-16 px-4 py-8 bg-[#C98C64] md:mt-20 md:py-14 md:px-5 lg:flex lg:justify-center lg:items-center"
       >
         <div class="mb-5 w-full flex flex-col items-center lg:w-1/2">
           <h1
@@ -252,7 +260,7 @@
 
       <!-- TESTIMONIAL START -->
       <div class="container mx-auto mt-16 px-4">
-        <h1 class="text-2xl font-bold text-center mb-16 md:text-4xl">
+        <h1 class="text-2xl font-bold text-center mb-16 md:text-4xl lg:mb-20">
           Testmonials :
         </h1>
         <div class="testimonials md:flex md:flex-wrap">
@@ -264,7 +272,7 @@
               alt=""
               class="rounded-full w-[84px] absolute -top-[40px] m-auto left-0 right-0 2xl:w-[96px]"
             />
-            <p class="mt-2 pt-9 sm:px-4 2xl:text-lg 2xl:mt-5">
+            <p class="mt-2 pt-9 sm:px-4 2xl:text-lg 2xl:px-10 2xl:mt-5">
               The restaurant's service was exceptional, providing a high level
               of attention and care to customers. The staff demonstrated
               professionalism and efficiency, ensuring a pleasant dining
@@ -280,7 +288,7 @@
               alt=""
               class="rounded-full w-[84px] absolute -top-[40px] m-auto left-0 right-0 2xl:w-[96px]"
             />
-            <p class="mt-2 pt-9 sm:px-4 2xl:text-lg 2xl:mt-5">
+            <p class="mt-2 pt-9 sm:px-4 2xl:text-lg 2xl:px-10 2xl:mt-5">
               I had the pleasure of dining at this restaurant last night and I
               must say, it was a truly memorable experience. The staff was
               attentive and the food was exquisite. I cannot recommend it
@@ -298,7 +306,7 @@
               alt=""
               class="rounded-full w-[84px] absolute -top-[40px] m-auto left-0 right-0 2xl:w-[96px]"
             />
-            <p class="mt-2 pt-9 sm:px-4 2xl:text-lg 2xl:mt-5">
+            <p class="mt-2 pt-9 sm:px-4 2xl:text-lg 2xl:px-10 2xl:mt-5">
               I have been a regular at this restaurant for years and it never
               disappoints. The menu is diverse and the food is consistently
               delicious. I highly recommend it to anyone looking for a great
@@ -311,6 +319,108 @@
         </div>
       </div>
       <!-- TESTIMONIAL END -->
+
+      <!-- RESERVATION FORM START -->
+      <div class="container mx-auto mt-16 px-4 py-6 bg-[#C98C64]">
+        <h1
+          class="text-2xl text-slate-50 font-bold text-center mb-6 md:text-4xl"
+        >
+          Make a reservation today!
+        </h1>
+        <div class="reservation-form">
+          <label class="block mb-2">
+            <span class="text-slate-200">Full name</span>
+            <input
+              type="text"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="John Doe"
+            />
+          </label>
+          <label class="block mb-2">
+            <span class="text-slate-200">Email address</span>
+            <input
+              type="email"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="john@example.com"
+            />
+          </label>
+          <label class="block mb-2">
+            <span class="text-slate-50">Phone Number</span>
+            <input
+              type="tel"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="812-123-1123"
+              id="phone"
+            />
+          </label>
+          <label class="block mb-4">
+            <span class="text-slate-50">Additional notes</span>
+            <textarea
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              rows="3"
+              placeholder="i want to sit near the window, etc..."
+            ></textarea>
+          </label>
+          <button
+            class="w-full bg-[#FD8E3B] text-slate-50 inline-block py-2 px-5 rounded-lg self-start sm:self-center lg:text-lg md:py-3 md:px-6"
+          >
+            Reserve a spot
+          </button>
+        </div>
+      </div>
+      <!-- RESERVATION FORM END -->
+
+      <!-- FOOTER START -->
+      <footer>
+        <div
+          class="container mx-auto mt-6 px-4 flex flex-col justify-center items-center"
+        >
+          <div class="flex gap-2 items-center">
+            <h1 class="text-2xl font-bold lg:text-4xl">BLIQUE</h1>
+            <img src="img/logo.svg" alt="" class="w-[48px] lg:w-[64px]" />
+
+            <h1 class="text-[#C38154] text-2xl font-bold lg:text-4xl">RESTO</h1>
+          </div>
+          <div class="socials flex gap-4 mb-2 mt-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              style="fill: #adadad"
+            >
+              <path
+                d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              style="fill: #adadad"
+            >
+              <path
+                d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+              ></path>
+              <circle cx="11.994" cy="11.979" r="3.003"></circle>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              style="fill: #adadad"
+            >
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-lg mb-4">Copyright &copy; 2023 Blique Resto</p>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
     </main>
   </body>
 </html>
