@@ -747,6 +747,10 @@ select {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .-top-\[40px\] {
   top: -40px;
 }
@@ -759,8 +763,16 @@ select {
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-\[80px\] {
   top: 80px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-auto {
@@ -900,6 +912,22 @@ select {
   cursor: pointer;
 }
 
+.scroll-m-28 {
+  scroll-margin: 7rem;
+}
+
+.scroll-p-28 {
+  scroll-padding: 7rem;
+}
+
+.scroll-p-20 {
+  scroll-padding: 5rem;
+}
+
+.scroll-p-24 {
+  scroll-padding: 6rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -953,6 +981,10 @@ select {
   align-self: flex-start;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -994,6 +1026,11 @@ select {
   border-top-width: 2px;
 }
 
+.border-\[\#FD8E3B\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 142 59 / var(--tw-border-opacity));
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1007,11 +1044,6 @@ select {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-\[\#FD8E3B\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(253 142 59 / var(--tw-border-opacity));
 }
 
 .bg-\[\#C38154\] {
@@ -1117,11 +1149,6 @@ select {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pb-7 {
@@ -1253,12 +1280,6 @@ select {
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1268,21 +1289,13 @@ select {
   width: 100%;
 }
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.active {
+  color: #c38154;
 }
 
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-125:hover {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1309,14 +1322,6 @@ select {
   background-color: transparent;
 }
 
-.hover\:bg-opacity-50:hover {
-  --tw-bg-opacity: 0.5;
-}
-
-.hover\:bg-opacity-40:hover {
-  --tw-bg-opacity: 0.4;
-}
-
 .hover\:bg-opacity-30:hover {
   --tw-bg-opacity: 0.3;
 }
@@ -1329,11 +1334,6 @@ select {
 .hover\:text-slate-100:hover {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#FD8E3B\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(253 142 59 / var(--tw-text-opacity));
 }
 
 .focus\:border-indigo-300:focus {
@@ -1584,6 +1584,11 @@ select {
     padding-bottom: 3.5rem;
   }
 
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1597,11 +1602,6 @@ select {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .md\:text-2xl {
