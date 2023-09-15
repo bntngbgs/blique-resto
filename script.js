@@ -3,6 +3,9 @@ const navItems = document.querySelector('.navbar');
 const input = document.querySelector('#phone');
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.navbar a');
+const reservationForm = document.getElementById('reservation');
+const reservationModal = document.querySelector('.modal');
+let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 // EVENT : toggle mobile navigation
 navButton.addEventListener('click', () => {
@@ -39,6 +42,18 @@ window.addEventListener('scroll', () => {
         .classList.add('active');
     }
   });
+});
+
+// EVENT : submit reservation form
+reservationForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const fullName = document.querySelector('input[type="text"]');
+  const email = document.querySelector('input[type="email"]');
+  const notes = document.querySelector('textarea');
+
+  reservationModal.innerHTML = `<p>full name : ${fullName.value}</p>
+  <p>email: ${email.value}</p>
+  <p>notes: ${notes.value}</p>`;
 });
 
 // PLUGINS : intl-tel-input form
