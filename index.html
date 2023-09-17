@@ -23,7 +23,7 @@
   </head>
   <body class="font-notoSerif">
     <!-- HEADER START -->
-    <header class="sticky top-0 bg-white z-10">
+    <header class="sticky top-0 bg-white z-10" id="header">
       <div
         class="container px-3 py-4 mx-auto flex justify-between items-center relative sm:px-0 sm:gap-5 md:py-5"
       >
@@ -374,10 +374,12 @@
             <input
               type="tel"
               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-              placeholder="812-123-1123"
+              placeholder="0812-123-1123"
               id="phone"
               required
             />
+            <span id="valid-msg" class="hidden">✓ Valid</span>
+            <span id="error-msg" class="hide"></span>
           </label>
           <label class="block mb-4">
             <span class="text-slate-50">Additional notes</span>
@@ -397,8 +399,49 @@
       <!-- RESERVATION FORM END -->
 
       <!-- RESERVATION SUBMIT MODAL START -->
-      <div class="container mx-auto">
-        <div class="modal"></div>
+      <div
+        class="hidden fixed top-0 left-0 z-10 w-screen h-screen bg-slate-700 bg-opacity-80 px-4"
+        id="reservation-modal"
+      >
+        <div
+          class="modal relative p-8 bg-[#C98C64] text-slate-50 rounded-lg sm:p-12"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            style="fill: white"
+            class="absolute top-2 right-2 close-modal cursor-pointer"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+              class="pointer-events-none"
+            ></path>
+          </svg>
+          <h1 class="text-2xl font-bold max-w-[35ch] mb-6 sm:text-4xl">
+            Thank you for making a reservation, Hope you had a great day!
+          </h1>
+
+          <p class="mb-2 text-lg">Your reservation details :</p>
+          <p class="mb-1">Id : <span class="font-bold"></span></p>
+          <p class="mb-1">Name : <span class="font-bold"></span></p>
+          <p class="mb-1">Email : <span class="font-bold"></span></p>
+          <p class="mb-1">Phone : <span class="font-bold"></span></p>
+          <p>Notes : <span></span></p>
+
+          <button
+            type="button"
+            class="px-6 py-1 mt-8 rounded-md bg-[#FD8E3B] close-modal hover:bg-opacity-70"
+          >
+            Close
+          </button>
+          <img
+            src="img/icon-confetti.svg"
+            alt=""
+            class="max-w-[72px] bottom-12 right-8 absolute md:bottom-20 md:right-52 sm:right-32 sm:max-w-[172px]"
+          />
+        </div>
       </div>
       <!-- RESERVATION SUBMIT MODAL END -->
     </main>
