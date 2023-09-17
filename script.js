@@ -16,10 +16,50 @@ const errorMap = [
   'Phone number is too long',
   'Invalid number',
 ];
+const options = {
+  root: null,
+  rootMargin: '-100px 0px -700px 0px',
+};
 
 if (window.innerWidth < 641) {
   navLinks[0].classList.remove('active');
 }
+
+// INTERSECTION OBSERVER : add active to navbar
+const observer = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    // console.log(entry.isIntersecting);
+    // console.log(entry);
+    if (entry.isIntersecting) {
+      try {
+        let nav = document.querySelector(
+          'nav a[href*=' + entry.target.id + ']'
+        );
+        nav.classList.add('active');
+
+        if (nav.parentElement.previousElementSibling) {
+          nav.parentElement.previousElementSibling.children[0].classList.remove(
+            'active'
+          );
+          navLinks[0].classList.remove('active');
+        }
+
+        if (nav.parentElement.nextElementSibling) {
+          nav.parentElement.nextElementSibling.children[0].classList.remove(
+            'active'
+          );
+        }
+      } catch (err) {
+        navLinks[0].classList.add('active');
+        navLinks[2].classList.remove('active');
+      }
+    }
+  });
+}, options);
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
 
 // EVENT : toggle mobile navigation
 navButton.addEventListener('click', () => {
@@ -33,7 +73,7 @@ navButton.addEventListener('click', () => {
   }
 });
 
-// EVENT :
+// EVENT : hide when link click
 navLinks.forEach((item) => {
   item.addEventListener('click', () => {
     navItems.classList.add('hidden');
@@ -49,34 +89,6 @@ window.addEventListener('scroll', () => {
   } else {
     document.getElementById('header').classList.remove('shadow');
   }
-});
-
-// EVENT : active navbar when scroll
-window.addEventListener('scroll', () => {
-  if (window.innerWidth < 641) {
-    return;
-  }
-  sections.forEach((item) => {
-    let top = window.scrollY;
-    let offset = item.offsetTop - 100;
-    let height = item.offsetHeight;
-    let id = item.getAttribute('id');
-
-    if (top < 580) {
-      navLinks[0].classList.add('active');
-      navLinks[1].classList.remove('active');
-    } else if (top > 1650) {
-      navLinks[0].classList.add('active');
-      navLinks[2].classList.remove('active');
-    } else if (top >= offset && top < offset + height) {
-      navLinks.forEach((link) => {
-        link.classList.remove('active');
-      });
-      document
-        .querySelector('.navbar a[href*=' + id + ']')
-        .classList.add('active');
-    }
-  });
 });
 
 // EVENT : submit reservation form
@@ -153,7 +165,7 @@ function renderModal(id, name, email, phone, notes) {
   spanModal[4].innerText = notes;
 }
 
-// LEGACY CODE
+// * ===== LEGACY CODE =====*
 
 // let scrollY = window.pageYOffset;
 
@@ -174,4 +186,32 @@ function renderModal(id, name, email, phone, notes) {
 //       .querySelector(`.navbar a[href*='${sectionId}']`)
 //       .classList.remove('active');
 //   }
+// });
+
+// EVENT : active navbar when scroll
+// window.addEventListener('scroll', () => {
+//   if (window.innerWidth < 641) {
+//     return;
+//   }
+//   sections.forEach((item) => {
+//     let top = window.scrollY;
+//     let offset = item.offsetTop - 100;
+//     let height = item.offsetHeight;
+//     let id = item.getAttribute('id');
+
+//     if (top < 580) {
+//       navLinks[0].classList.add('active');
+//       navLinks[1].classList.remove('active');
+//     } else if (top > 1650) {
+//       navLinks[0].classList.add('active');
+//       navLinks[2].classList.remove('active');
+//     } else if (top >= offset && top < offset + height) {
+//       navLinks.forEach((link) => {
+//         link.classList.remove('active');
+//       });
+//       document
+//         .querySelector('.navbar a[href*=' + id + ']')
+//         .classList.add('active');
+//     }
+//   });
 // });
